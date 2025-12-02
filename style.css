@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+header {
+  background: #2563eb;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+button {
+  background: white;
+  color: #2563eb;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+section {
+  padding: 20px;
+  background: white;
+  margin: 15px;
+  border-radius: 8px;
+}
+.contact-buttons {
+  margin-top: 20px;
+}
+
+.btn-email,
+.btn-whatsapp {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-email {
+  background: #0ea5e9;
+}
+
+.btn-whatsapp {
+  background: #25D366;
+}
