@@ -1,30 +1,45 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background:
+  linear-gradient(
+    rgba(31, 41, 55, 0.75),
+    rgba(212, 175, 55, 0.15)
+  ),
+  url("bg.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
 
+  padding: 40px 20px;
 header {
-  background: #2563eb;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
   color: white;
   text-align: center;
-  padding: 40px 20px;
+  padding: 60px 20px;
 }
-
+header {
+  padding-top: 60px;
+}
+h1 {
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
 button {
   background: white;
   color: #2563eb;
   border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 14px 28px;
+  border-radius: 30px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 section {
-  padding: 20px;
+  padding: 30px;
   background: white;
-  margin: 15px;
-  border-radius: 8px;
+  margin: 20px auto;
+  border-radius: 16px;
+  max-width: 900px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 .contact-buttons {
   margin-top: 20px;
@@ -47,4 +62,117 @@ section {
 
 .btn-whatsapp {
   background: #25D366;
+}
+.pricing {
+  text-align: center;
+}
+
+.price-box {
+  background: #ffffff;
+  padding: 25px;
+  margin: 20px auto;
+  border-radius: 16px;
+  max-width: 280px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  transition: transform 0.2s ease;
+}
+
+.price-box:hover {
+  transform: translateY(-5px);
+}
+
+.price-box h3 {
+  margin-top: 0;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2563eb;
+}
+h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+h1 {
+  color: #f3f4f6;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.65);
+}
+h2 {
+  color: #1f2937;
+}
+
+p, li {
+  color: #374151;
+  line-height: 1.6;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #6b7280;
+  font-size: 14px;
+}
+@keyframes luxuryFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.lux-name {
+  position: relative;
+  display: inline-block;
+  font-family: 'Playfair Display', serif;
+}
+
+.lux-name::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -12px;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #d4af37, #b8962e);
+  animation: goldReveal 2.5s ease forwards;
+}
+
+@keyframes goldReveal {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 70%;
+    opacity: 1;
+  }
+}
+.tagline {
+  color: #e5e7eb;
+  font-size: 18px;
+  margin-top: 10px;
+}
+footer {
+  margin-top: 60px;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  color: #cbd5e1;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  line-height: 1.6;
+}
+footer {
+  border-top: 1px solid rgba(255,255,255,0.08);
 }
